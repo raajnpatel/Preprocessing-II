@@ -1,22 +1,58 @@
 .home {
 
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px dashed darkslategrey;
+    .funbusPic {
+      background-image: url("../img/fun-bus.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 240px;
+    }
+    p {
+      margin: 3%;
+      margin-top: 0;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+      @media @mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+          //.text-content, .img-content {
+          //  width: 100%;
+          //}
+      }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+        @media @mobile {
+          width: 100%;
+        }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+        @media @mobile {
+          width: 70%;
+          margin-left: 13%;
+        }
       img {
         border-radius: 10px;
       }
@@ -26,6 +62,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+      }
 
     .text-content {
       padding-left: 1%;
@@ -56,6 +96,20 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+        .btn {
+          .btnSign();
+        }
+    }
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+        .destination {
+          width: 100%;
+            .btn {
+              width: 30%;
+
+            }
+        }
     }
   }
 }// home
