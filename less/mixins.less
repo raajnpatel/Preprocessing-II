@@ -1,1 +1,24 @@
 // Mixins in here
+
+.btnSign {
+  font-size: 2rem;
+  border: 1px solid black;
+  background: @button-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  width: 60%;
+  height: 15%;
+}
+
+.font-paragraph {
+  font-family: "Bahianita", cursive;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  padding: 1%;
+    &:hover {
+      transform: scale(1.02);
+      transition: 1s;
+    }
+}
