@@ -145,7 +145,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid red !important;
 }
 html {
   font-size: 62.5%;
@@ -276,7 +275,7 @@ header nav a {
 @media (max-width: 600px) {
   .home .content-section .img-content {
     width: 70%;
-    margin-left: 12%;
+    margin-left: 13%;
   }
 }
 .home .content-section .img-content img {
