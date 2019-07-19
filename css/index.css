@@ -15,6 +15,10 @@
   line-height: 1.5;
   padding: 1%;
 }
+.font-paragraph:hover {
+  transform: scale(1.02);
+  transition: 1s;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -176,6 +180,10 @@ p {
   font-size: 2.4rem;
   line-height: 1.5;
   padding: 1%;
+}
+p:hover {
+  transform: scale(1.02);
+  transition: 1s;
 }
 img {
   max-width: 100%;
